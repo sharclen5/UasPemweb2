@@ -23,24 +23,6 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label class="font-weight-bold">Jam Masuk</label>
-                            <input type="time" class="form-control @error('jam_masuk') is-invalid @enderror" name="jam_masuk" value="{{ old('jam_masuk') }}" placeholder="Masukkan Jam Masuk">
-                            @error('jam_masuk')
-                                <div class="invalid-feedback">
-                                    {{ $message }}
-                                </div>
-                            @enderror
-                        </div>
-                        <div class="form-group">
-                            <label class="font-weight-bold">Jam Keluar</label>
-                            <input type="time" class="form-control @error('jam_keluar') is-invalid @enderror" name="jam_keluar" value="{{ old('jam_keluar') }}" placeholder="Masukkan Jam Keluar (Opsional)">
-                            @error('jam_keluar')
-                                <div class="invalid-feedback">
-                                    {{ $message }}
-                                </div>
-                            @enderror
-                        </div>
-                        <div class="form-group">
                             <label class="font-weight-bold">pelanggan</label>
                             <select class="form-control @error('pelanggan_id') is-invalid @enderror" name="pelanggan_id">
                                 <option value="">Pilih pelanggan</option>
